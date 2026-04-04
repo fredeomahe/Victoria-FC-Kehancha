@@ -1,0 +1,74 @@
+import React from "react";
+
+const players = [ { name: "Fred Omahe", position: "Midfielder", number: 8 }, { name: "Omollo Madawa", position: "Defender", number: 5 }, { name: "Lazarus", position: "Forward", number: 9 }, { name: "Kiduduu", position: "Winger", number: 11 }, { name: "Kegoka", position: "Goalkeeper", number: 1 }, ];
+
+export default function FootballClubVictoria() { return ( <div className="min-h-screen bg-black text-white font-sans"> {/* Header */} <header className="bg-green-700 p-4 flex justify-between items-center shadow-lg"> <div className="flex items-center space-x-3"> <img src="/logo.png" alt="Logo" className="h-10 w-10" /> <h1 className="text-2xl font-bold">FC Victoria</h1> </div> <nav className="space-x-4 text-sm md:text-base"> <a href="#about" className="hover:underline">About</a> <a href="#team" className="hover:underline">Team</a> <a href="#sponsors" className="hover:underline">Sponsors</a> <a href="#contact" className="hover:underline">Contact</a> </nav> </header>
+
+{/* Hero */}
+  <section className="text-center py-20 bg-gradient-to-br from-green-800 via-black to-black">
+    <img src="/logo.png" className="h-28 mx-auto mb-4" />
+    <h2 className="text-4xl md:text-5xl font-bold mb-4">Football Club Victoria</h2>
+    <p className="text-lg italic mb-2">"Rising from Kehancha to Greatness"</p>
+    <p>📍 Victorious Academy, Kehancha</p>
+  </section>
+
+  {/* About */}
+  <section id="about" className="p-10 text-center max-w-3xl mx-auto">
+    <h3 className="text-3xl font-semibold mb-4">About Us</h3>
+    <p className="text-gray-300">
+      Football Club Victoria is a grassroots football team dedicated to developing young talent,
+      building discipline, and creating opportunities through sport. We believe in community,
+      growth, and excellence both on and off the pitch.
+    </p>
+  </section>
+
+  {/* Team */}
+  <section id="team" className="p-10 bg-gray-900">
+    <h3 className="text-3xl font-semibold text-center mb-8">Our Squad</h3>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      {players.map((p, i) => (
+        <div key={i} className="bg-black rounded-2xl p-5 shadow-lg hover:scale-105 transition">
+          <div className="h-40 bg-gray-700 rounded-xl mb-4 flex items-center justify-center text-gray-400">
+            Photo
+          </div>
+          <h4 className="text-xl font-bold">#{p.number} {p.name}</h4>
+          <p className="text-green-400">{p.position}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  {/* Sponsors */}
+  <section id="sponsors" className="p-10 text-center bg-gray-800">
+    <h3 className="text-3xl font-semibold mb-4">Sponsors & Partners</h3>
+    <p className="mb-6 text-gray-300">Partner with us to support youth development and gain community visibility.</p>
+
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+      {[1,2,3,4].map((s) => (
+        <div key={s} className="h-20 bg-gray-700 rounded-xl flex items-center justify-center text-gray-400">
+          Logo
+        </div>
+      ))}
+    </div>
+
+    <div className="bg-black p-6 rounded-xl max-w-lg mx-auto">
+      <h4 className="text-xl font-bold mb-2">Become a Sponsor</h4>
+      <p className="text-gray-300 mb-3">Support talent. Build your brand. Impact the community.</p>
+      <p className="font-bold">📞 0113123469</p>
+    </div>
+  </section>
+
+  {/* Contact */}
+  <section id="contact" className="p-10 text-center">
+    <h3 className="text-3xl font-semibold mb-4">Contact Us</h3>
+    <p className="mb-2">📞 0113123469</p>
+    <p className="text-gray-400">Reach out for trials, partnerships, or support.</p>
+  </section>
+
+  {/* Footer */}
+  <footer className="bg-green-700 text-center p-4">
+    <p>© {new Date().getFullYear()} Football Club Victoria</p>
+  </footer>
+</div>
+
+); }
