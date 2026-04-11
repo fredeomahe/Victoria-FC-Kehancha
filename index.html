@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Football Club Victoria</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:black;
+  color:white;
+}
+
+/* HEADER */
+header {
+  background:#00c853;
+  padding:15px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+/* HERO */
+.hero {
+  height:100vh;
+  background:url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2') center/cover no-repeat;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.overlay {
+  background:rgba(0,0,0,0.7);
+  padding:30px;
+  border-radius:15px;
+}
+
+/* SECTION */
+section {
+  padding:40px 20px;
+  text-align:center;
+}
+
+/* TITLE */
+h2 {
+  color:#00c853;
+}
+
+/* CARDS */
+.card {
+  background:#111;
+  margin:10px auto;
+  padding:15px;
+  border-radius:10px;
+  max-width:400px;
+}
+
+/* GRID */
+.grid {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+}
+
+.player {
+  background:#111;
+  padding:10px;
+  border-radius:10px;
+  width:160px;
+  transition:0.3s;
+}
+
+.player:hover {
+  background:#00c853;
+  color:black;
+  transform:scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  background:#00c853;
+  padding:10px;
+  text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png" height="40">
+  <h2>Football Club Victoria</h2>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay">
+    <img src="logo.png" height="80"><br><br>
+    <h1>Rise. Play. Conquer.</h1>
+    <p>Migori County League 2025/2026 - Zone C</p>
+    <p>📍 Victorious Academy, Kehancha</p>
+  </div>
+</section>
+
+<!-- MANAGEMENT -->
+<section>
+  <h2>Club Leadership</h2>
+  <div class="card">
+    <p><b>Team Manager:</b> Yusuf M. Mwita</p>
+    <p><b>Assistant Manager:</b> Joseph Wangwi</p>
+    <p><b>Captain:</b> Paul Bhasiry (NYANYA)</p>
+    <p><b>Assistant Captain:</b> Majezi Muniko</p>
+  </div>
+</section>
+
+<!-- FIXTURES -->
+<section>
+  <h2>Fixtures</h2>
+
+  <div class="card">12 Apr 2026 – HOME vs Isebania Veterans 🏟️ 1PM</div>
+  <div class="card">19 Apr 2026 – AWAY vs Kugisingisi</div>
+  <div class="card">26 Apr 2026 – AWAY vs Kohanga FC</div>
+  <div class="card">3 May 2026 – HOME vs Karosi FC</div>
+  <div class="card">10 May 2026 – AWAY vs Kebaroti FC</div>
+
+</section>
+
+<!-- SQUAD -->
+<section>
+  <h2>Squad</h2>
+
+  <h3>Goalkeepers</h3>
+  <div class="grid">
+    <div class="player">Kelvin Nkara (1)</div>
+    <div class="player">Teento Oscar (13)</div>
+    <div class="player">Mutula Junior (69)</div>
+  </div>
+
+  <h3>Defenders</h3>
+  <div class="grid">
+    <div class="player">Mokami Mokami (4)</div>
+    <div class="player">Paul Bhasiry (15)</div>
+    <div class="player">Majezi Muniko (12)</div>
+    <div class="player">Monanka M (20)</div>
+  </div>
+
+  <h3>Midfielders</h3>
+  <div class="grid">
+    <div class="player">Kegoka Kegoka (8)</div>
+    <div class="player">Mwita Juma (6)</div>
+    <div class="player">Paul Kidudu (17)</div>
+    <div class="player">Rogena Skipper (99)</div>
+    <div class="player">Omolloh Madawa (21)</div>
+  </div>
+
+  <h3>Strikers</h3>
+  <div class="grid">
+    <div class="player">Angelo Harroo (9)</div>
+    <div class="player">Chachaa (30)</div>
+    <div class="player">Fred Omahe (7)</div>
+    <div class="player">Wambura (11)</div>
+    <div class="player">Kegoka Mkodo (10)</div>
+    <div class="player">Lazarus (35)</div>
+  </div>
+
+</section>
+
+<!-- TABLE -->
+<section>
+  <h2>League Table</h2>
+  <p>Track standings here:</p>
+  <a href="https://www.flashscore.com/" target="_blank" style="color:#00c853;">
+    View Migori County League Table
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 Football Club Victoria</p>
+  <p>#RiseWithVictoria ⚽</p>
+</footer>
+
+</body>
+</html>
