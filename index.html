@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Football Club Victoria</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #000000, #003300);
+  color:white;
+}
+
+/* HEADER */
+header {
+  background: black;
+  display:flex;
+  align-items:center;
+  padding:15px 20px;
+  gap:10px;
+  border-bottom: 2px solid #00c853;
+}
+
+header h2 {
+  margin:0;
+  color:#00c853;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a') center/cover no-repeat;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero .overlay {
+  background: rgba(0,0,0,0.7);
+  padding:40px;
+  border-radius:15px;
+}
+
+.hero h1 {
+  font-size:40px;
+  margin-bottom:10px;
+}
+
+.btn {
+  display:inline-block;
+  margin-top:15px;
+  padding:10px 20px;
+  background:#00c853;
+  color:black;
+  text-decoration:none;
+  border-radius:20px;
+  font-weight:bold;
+}
+
+/* SECTION */
+section {
+  padding:40px 20px;
+  text-align:center;
+}
+
+/* PLAYERS */
+.players {
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.card {
+  background:#111;
+  padding:20px;
+  border-radius:15px;
+  width:150px;
+  transition:0.3s;
+}
+
+.card:hover {
+  transform:scale(1.1);
+  background:#00c853;
+  color:black;
+}
+
+/* SPONSORS */
+.sponsors {
+  background:#111;
+}
+
+/* FOOTER */
+footer {
+  background:black;
+  padding:15px;
+  text-align:center;
+  border-top:2px solid #00c853;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .hero h1 {
+    font-size:28px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png" height="40">
+  <h2>Football Club Victoria</h2>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay">
+    <h1>Rise. Play. Conquer.</h1>
+    <p>Building talent. Inspiring community.</p>
+    <a href="#players" class="btn">Meet The Squad</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+  <img src="logo.png" height="100">
+  <h2>Welcome to Football Club Victoria</h2>
+  <p>📍 Victorious Academy, Kehancha</p>
+</section>
+
+<!-- PLAYERS -->
+<section id="players">
+  <h2>Our Squad</h2>
+  <div class="players">
+    <div class="card"><h3>Fred Omahe</h3><p>Forward</p></div>
+    <div class="card"><h3>Omollo Madawa</h3><p>Midfielder</p></div>
+    <div class="card"><h3>Lazarus</h3><p>Defender</p></div>
+    <div class="card"><h3>Kiduduu</h3><p>Winger</p></div>
+    <div class="card"><h3>Kegoka</h3><p>Goalkeeper</p></div>
+  </div>
+</section>
+
+<!-- SPONSORS -->
+<section class="sponsors">
+  <h2>Partners & Sponsors</h2>
+  <p>Support the future of football ⚽</p>
+  <p>📞 0113123469</p>
+</section>
+
+<footer>
+  <p>© 2026 Football Club Victoria</p>
+  <p>#RiseWithVictoria ⚽</p>
+</footer>
+
+</body>
+</html>
