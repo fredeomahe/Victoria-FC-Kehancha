@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Football Club Victoria</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  color:white;
+  background: black;
+}
+
+/* HEADER */
+header {
+  background:#00c853;
+  padding:15px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+/* HERO */
+.hero {
+  height:100vh;
+  background: url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2') center/cover no-repeat;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.7);
+  padding:30px;
+  border-radius:15px;
+}
+
+h1 {
+  font-size:35px;
+}
+
+/* BUTTON */
+.btn {
+  display:inline-block;
+  margin-top:15px;
+  padding:10px 20px;
+  background:#00c853;
+  color:black;
+  text-decoration:none;
+  border-radius:20px;
+  font-weight:bold;
+}
+
+/* SECTION */
+section {
+  padding:40px 20px;
+  text-align:center;
+}
+
+/* PLAYERS */
+.players {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:15px;
+}
+
+.card {
+  background:#111;
+  padding:15px;
+  border-radius:10px;
+  width:140px;
+  transition:0.3s;
+}
+
+.card:hover {
+  background:#00c853;
+  color:black;
+  transform:scale(1.1);
+}
+
+/* FIXTURES & RESULTS */
+.box {
+  background:#111;
+  margin:10px auto;
+  padding:15px;
+  border-radius:10px;
+  max-width:300px;
+}
+
+/* LINK */
+a.link {
+  color:#00c853;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* FOOTER */
+footer {
+  background:#00c853;
+  padding:10px;
+  text-align:center;
+}
+
+/* ANIMATION */
+.fade {
+  animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform:translateY(20px);}
+  to {opacity:1; transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png" height="40">
+  <h2>Football Club Victoria</h2>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay fade">
+    <img src="logo.png" height="80"><br><br>
+    <h1>Rise. Play. Conquer.</h1>
+    <p>Building talent. Inspiring community.</p>
+    <p>📍 Victorious Academy, Kehancha</p>
+    <a href="#fixtures" class="btn">View Fixtures</a>
+  </div>
+</section>
+
+<!-- PLAYERS -->
+<section>
+  <h2>Our Squad</h2>
+  <div class="players">
+    <div class="card">Fred Omahe</div>
+    <div class="card">Omollo Madawa</div>
+    <div class="card">Lazarus</div>
+    <div class="card">Kiduduu</div>
+    <div class="card">Kegoka</div>
+  </div>
+</section>
+
+<!-- FIXTURES -->
+<section id="fixtures">
+  <h2>Upcoming Fixtures</h2>
+  <div class="box">Victoria FC vs Kehancha United<br>📅 20 April 2026</div>
+  <div class="box">Victoria FC vs Migori Youth<br>📅 27 April 2026</div>
+</section>
+
+<!-- RESULTS -->
+<section>
+  <h2>Recent Results</h2>
+  <div class="box">Victoria
