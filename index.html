@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Victoria FC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background:#0a0a0a;
+  color:white;
+}
+
+/* NAVBAR */
+header {
+  position:sticky;
+  top:0;
+  background:rgba(0,0,0,0.8);
+  backdrop-filter:blur(10px);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+  z-index:1000;
+}
+
+header h2 {
+  color:#00e676;
+}
+
+nav a {
+  color:white;
+  margin-left:15px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+nav a:hover {
+  color:#00e676;
+}
+
+/* HERO */
+.hero {
+  height:100vh;
+  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+  url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2') center/cover no-repeat;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+}
+
+.hero h1 {
+  font-size:2.5rem;
+}
+
+.hero p {
+  margin-top:10px;
+  opacity:0.8;
+}
+
+.btn {
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 25px;
+  background:#00e676;
+  color:black;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.btn:hover {
+  background:white;
+}
+
+/* SECTION */
+section {
+  padding:60px 20px;
+  text-align:center;
+}
+
+h2 {
+  color:#00e676;
+  margin-bottom:20px;
+}
+
+/* CARD */
+.card {
+  background:rgba(255,255,255,0.05);
+  border-radius:15px;
+  padding:20px;
+  margin:10px auto;
+  max-width:500px;
+  backdrop-filter:blur(8px);
+}
+
+/* FIXTURES */
+.fixture {
+  background:#111;
+  padding:15px;
+  border-left:5px solid #00e676;
+  margin:10px auto;
+  max-width:500px;
+  border-radius:10px;
+}
+
+/* GRID */
+.grid {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:15px;
+}
+
+.player {
+  background:#111;
+  padding:15px;
+  border-radius:10px;
+  width:160px;
+  transition:0.3s;
+}
+
+.player:hover {
+  background:#00e676;
+  color:black;
+  transform:translateY(-5px);
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:15px;
+  border-radius:50%;
+  font-size:20px;
+  text-decoration:none;
+}
+
+/* FOOTER */
+footer {
+  background:#111;
+  padding:20px;
+  text-align:center;
+  margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>Victoria FC</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#fixtures">Fixtures</a>
+    <a href="#squad">Squad</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>Rise. Play. Conquer.</h1>
+    <p>Migori County League 2025/2026 - Zone C</p>
+    <p>📍 Victorious Academy, Kehancha</p>
+    <a href="#fixtures" class="btn">View Fixtures</a>
+  </div>
+</section>
+
+<!-- MANAGEMENT -->
+<section>
+  <h2>Club Leadership</h2>
+  <div class="card">
+    <p><b>Team Manager:</b> Yusuf M. Mwita</p>
+    <p><b>Assistant Manager:</b> Joseph Wangwi</p>
+    <p><b>Captain:</b> Paul Bhasiry</p>
+    <p><b>Assistant Captain:</b> Majezi Muniko</p>
+  </div>
+</section>
+
+<!-- FIXTURES -->
+<section id="fixtures">
+  <h2>Fixtures</h2>
+
+  <div class="fixture">12 Apr – HOME vs Isebania Veterans 🏟️ 1PM</div>
+  <div class="fixture">19 Apr – AWAY vs Kugisingisi</div>
+  <div class="fixture">26 Apr – AWAY vs Kohanga FC</div>
+  <div class="fixture">3 May – HOME vs Karosi FC</div>
+  <div class="fixture">10 May – AWAY vs Kebaroti FC</div>
+
+</section>
+
+<!-- SQUAD -->
+<section id="squad">
+  <h2>Squad</h2>
+
+  <h3>Goalkeepers</h3>
+  <div class="grid">
+    <div class="player">Kelvin Nkara</div>
+    <div class="player">Teento Oscar</div>
+    <div class="player">Mutula Junior</div>
+  </div>
+
+  <h3>Defenders</h3>
+  <div class="grid">
+    <div class="player">Mokami Mokami</div>
+    <div class="player">Paul Bhasiry</div>
+    <div class="player">Majezi Muniko</div>
+    <div class="player">Monanka M</div>
+  </div>
+
+  <h3>Midfielders</h3>
+  <div class="grid">
+    <div class="player">Kegoka Kegoka</div>
+    <div class="player">Mwita Juma</div>
+    <div class="player">Paul Kidudu</div>
+    <div class="player">Rogena Skipper</div>
+    <div class="player">Omolloh Madawa</div>
+  </div>
+
+  <h3>Strikers</h3>
+  <div class="grid">
+    <div class="player">Angelo Harroo</div>
+    <div class="player">Chachaa</div>
+    <div class="player">Fred Omahe</div>
+    <div class="player">Wambura</div>
+    <div class="player">Kegoka Mkodo</div>
+    <div class="player">Lazarus</div>
+  </div>
+
+</section>
+
+<!-- LEAGUE -->
+<section>
+  <h2>League</h2>
+  <a href="https://www.fkfleagues.co.ke/fixtures/migori2526zc" target="_blank" class="btn">
+    View Official League Page
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 Victoria FC</p>
+  <p>#RiseWithVictoria ⚽</p>
+</footer>
+
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/2547XXXXXXXX" class="whatsapp">💬</a>
+
+</body>
+</html>
